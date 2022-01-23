@@ -1,0 +1,239 @@
+html, body, .container {
+  height: 100%;
+}
+:root{
+  --main-color:#eeff8e;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+}
+
+
+/*  اضافة خلفية للكونتينر وعليها طبقة غامقة */
+.container{
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./images/banner.png);
+  background-size: cover;  
+}
+.table-container {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* زيادة البادنق */
+.r-side {
+  padding-right: 60px;
+  padding-left: 5px;
+  vertical-align: top; /* */
+}
+
+
+/* تغيير لونها واضافة مارجن وبوردر من الاسفل */
+.r-side h2 {
+  color: var(--main-color);
+
+  margin: 20px      15px          0px;
+  /* (    top   right & left   bottum )*/
+
+  border-bottom: 1px solid var(--main-color);
+}
+
+/* تغيير لون البي تاق واضافة مسافه بين الاسطر بواسطة اللاين هايت بمقدار 1.5 */
+.r-side p {
+    margin:  20px      30px         0;
+     /* (    top   right & left   bottum )*/
+    color: #eee;
+    line-height: 1.5; 
+}
+
+
+.r-side #list-skills li{
+  list-style: square;
+  padding: 0 15px;
+  color: #eee;
+  margin: 5px 0px;
+}
+
+
+/* اضافة بوردر جهة اليمين وبادنق من اليمين واليسار بمقار 20 */
+.l-side {
+  width: 270px;
+ 
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+
+
+/* تغيير وزن الخط الى نورمال واضافة بوردر من الاسفل  */
+.l-side h3{
+  font-weight: normal;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+
+
+.l-side p{
+    color: #eee;
+}
+
+
+/* تغيير لون الايقونات في المعلومات الشخصية */
+.l-side p i{
+  color: var(--main-color);
+}
+
+
+
+/* اضافة مارجن للصورة من الاعلى بمقدار 25 واليمين واليسار اوتو ومن الاسفل بمقدار 55  */
+.avatar img {
+    margin: 25px      auto        55px;
+    /* (    top   right & left   bottum )*/
+    display: block;
+    border-radius: 50%;
+    height: 10%;
+    width: 50%;
+}
+
+
+/* تعديل حجمه الى 90 واضافة مارجن من الاعلى بمقدار 32 ومن اليمين 10 , ومن اليسار والاسفل 0 */
+.Evaluate {
+  width: 90%;
+  margin: 32%    10px     0       0;
+  
+  /* (    top   right    left   bottum )*/
+}
+
+
+/* تعديل Arabic & English words */
+.Evaluate h4{
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+/* تعديل صندوق المستوى واضفة لون شفاف  في الخلفية  */
+.Evaluate .box-level{
+  width: 70%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #ffffff73;
+  padding: 1px;
+}
+
+
+/* بحجم 80%. تعديل المستوى العربي واضافة اللون الرئيسي في الخلفية  */
+.Evaluate .box-level .level-Arabic{
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    margin: 40 20px;
+    padding: 1px;
+    margin-top: -1px;
+    margin-left: -2px;
+    background-color: var(--main-color);
+}
+/* بحجم 50%. تعديل المستوى الانجليزي واضافة اللون الرئيسي في الخلفية  */
+
+.Evaluate .box-level .level-English{
+  width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    margin: 40 20px;
+    padding: 1px;
+    margin-top: -1px;
+    margin-left: -2px;
+    background-color: var(--main-color);
+}
+
+
+
+
+.top-nav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.top-nav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+ul {
+  display: inline-block;
+}
+
+/* Change the color of links on hover */
+.top-nav a:hover {
+  color: var(--main-color);
+}
+
+/* Add a color to the active/current link */
+.top-nav a.active {
+  color: var(--main-color);
+}
+
+footer {
+/* background-color: #eccfcf; */
+width: 100%;
+height: 50%;
+background-color: #D3D3D3;
+padding-top: 70px;
+
+}
+
+footer p {
+  text-align: center;
+  color: black;
+  padding: 70px;
+  font-size: 20px;
+
+}
+footer .icon{
+  text-align: center;
+
+}
+/* تعديل حجم الايقونات في النهاية واضافة مسافة بينهم */
+footer .icon i{
+  padding: 20px;
+  font-size: 25px;
+}
+
+.form {
+   
+  vertical-align:top ;
+  padding-left: 20px;
+  
+}
+.form h2 {
+
+  margin-left: 8%  ;
+}
+
+.form .sub {
+  margin-left: 10%;
+}
+.form .sub:hover {
+
+background-color: aqua;
+}
+.form-right {
+  float: right;
+  
+}
+.form-right .sub{
+  margin-left: 10%;
+}
+.form-right .sub:hover {
+
+  background-color: aqua;
+  }
